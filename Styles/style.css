@@ -1,0 +1,146 @@
+body{
+    background-color: #ddd;
+    padding: 0;
+    margin: 0;
+}
+/* CSS Custom Properties */
+:root{
+    --main-width:1280px;
+    --max-width:1920px;
+    --main-content-width:870px;
+}
+/* Headers style start */
+.main-header{
+    background-color: rgb(8, 8, 242);
+    min-width:var(--main-width);
+    max-width: var(--max-width);
+}
+.navigation-tag{
+    width: var(--main-content-width);
+    margin: auto;
+    height:64px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.header-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left> i,.header-left-text{
+    font-size: 2em;
+    color: white;
+    margin-right:0.5em;
+}
+.header-left > i{
+    color:white;
+}
+.header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.header-right>a,img{
+    text-decoration: none;
+    padding: .5em;
+    color: white;
+    font-size: 1.5em;
+} 
+.header-right>img{
+    max-height: 8
+}
+/* Headers style end */
+
+/* top players style start-- */
+.top-main-content{
+    width: var(--main-content-width);
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+}
+.top-players-container{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    gap: 10px;
+}
+.top-content-container{
+    padding: 20px;
+}
+.top-player-text{
+    color: blue;
+}
+.player{
+    display: flex;
+    align-items: center;
+    color:rgba(25, 21, 21, 0.857);
+}
+.player>img{
+    width:4em;
+}
+/* Top players style end */
+    
+.hr-line{
+    color: grey;
+    width: 95%;
+    margin: auto;
+}
+/* Top Blogs Start  */
+
+.top-blogs-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+.top-content-container2{
+    padding: 20px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+}
+.blog>img{
+    width: 200px;
+}
+.blog-text>h2{
+    font-size:2em;
+}
+.blog-text>span{
+    font-size:1.5em;
+}
+.Top-blogs-text{
+    color:blue;
+}
+    
+   
+   
+    
+
+
+    
+    
+
+
+   
+   
+
+
+    
+
+   
+
+   
+
+
+
+    
+   
+
+    
+    
+   
+    
+
