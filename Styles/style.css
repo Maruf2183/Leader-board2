@@ -2,12 +2,15 @@ body{
     background-color: #ddd;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
+/* Google Fonts import here ... */
+
 /* CSS Custom Properties */
 :root{
     --main-width:1280px;
     --max-width:1920px;
-    --main-content-width:870px;
+    --main-content-width:920px;
 }
 /* Headers style start */
 .main-header{
@@ -55,9 +58,9 @@ body{
 /* Headers style end */
 
 /* top players style start-- */
-.top-main-content{
+.top-main-content,.main-content-2{
     width: var(--main-content-width);
-    margin: auto;
+    margin: 3em auto;
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
@@ -67,8 +70,8 @@ body{
     grid-template-columns:auto auto auto;
     gap: 10px;
 }
-.top-content-container{
-    padding: 20px;
+.top-content-container,.main-content-two_container{
+    margin:20px;
 }
 .top-player-text{
     color: blue;
@@ -82,18 +85,16 @@ body{
     width:4em;
 }
 /* Top players style end */
-    
 .hr-line{
     color: grey;
     width: 95%;
     margin: auto;
 }
 /* Top Blogs Start  */
-
 .top-blogs-container{
     display: grid;
-    grid-template-columns: auto auto;
-    
+    /* grid-template-columns: repeat(auto-fill, calc((100%) / 2)); */
+   grid-template-columns: auto auto;    
 }
 .top-content-container2{
     padding: 20px;
@@ -101,19 +102,90 @@ body{
 .blog{
     display: flex;
     align-items: center;
+   
+   
 }
 .blog>img{
-    width: 200px;
+    max-width: 40%;
+    padding:1em;
+  
+}
+.blog-text{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    
+    height: 100%;
 }
 .blog-text>h2{
-    font-size:2em;
+    font-size: 20px;
+    line-height: 35px;
+    color: rgba(64, 54, 54, 0.965);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
-.blog-text>span{
-    font-size:1.5em;
+    
+    
+.blog-text>div>span{
+    font-size:1em;
+    padding-right: 6px;
 }
 .Top-blogs-text{
     color:blue;
 }
+.by{
+   color: gray;
+}
+.bloger-name{
+    color: blue;
+    font-weight: bold;
+}
+/* MAIN CONTENT TWO START    */
+.top-courses-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.course{
+    margin: 10px 0px;
+    width: 27%;
+    padding:20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.course-photo{
+    width:100%;
+}
+.course-photo >img{
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+.card-footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.timing{
+   padding: 5px;
+   background-color: rgba(255, 192, 203, 0.62);
+   color: rgb(195, 98, 114);
+   border-radius: 5px;
+}
+
+   
+
+
+    
+
+   
+
+
+    
+   
+
+
     
    
    
